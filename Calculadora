@@ -13,12 +13,16 @@ def dividir(a, b):
     return a / b
 
 def main():
-    print("Calculadora Básica")
-    print("Operaciones disponibles:")
+    print("****************************")
+    print("*    CALCULADORA BÁSICA    *")
+    print("****************************")
+    print("Bienvenido a la Calculadora Básica")
+    print("Podrás realizar las siguientes operaciones:")
     print("1. Sumar")
     print("2. Restar")
     print("3. Multiplicar")
     print("4. Dividir")
+    print("****************************")
 
     while True:
         try:
@@ -41,6 +45,7 @@ def main():
 
             otra = input("¿Quieres realizar otra operación? (s/n): ").lower()
             if otra != 's':
+                print("Gracias por usar la Calculadora Básica. ¡Hasta pronto!")
                 break
 
         except ValueError:
